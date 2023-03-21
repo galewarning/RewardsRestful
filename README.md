@@ -27,4 +27,15 @@
 
 
 ## how to run the project
+A dataset is preloaded to h2 database by script.sql when the application starts. 
+The server is running on:
     
+    http://localhost:8080
+    
+API for customers
+
+    GET     /api/customers              get all customers
+    GET     /api/customers/{id}         get customer by id
+    POST    /api/customers              create a customer
+    PUT     /api/customers/{id}         update a customer
+    DELETE  /api/customers/{id}         delete a customer

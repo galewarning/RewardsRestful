@@ -23,6 +23,7 @@ public class CustomerEntityVoConverter {
         if (customer == null) return null;
 
         CustomerEntity customerEntity = new CustomerEntity();
+        customerEntity.setId(customer.getId());
         customerEntity.setAge(customer.getAge());
         customerEntity.setName(customer.getName());
         return customerEntity;

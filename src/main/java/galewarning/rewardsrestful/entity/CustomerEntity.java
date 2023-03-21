@@ -7,7 +7,9 @@ import javax.persistence.*;
 public class CustomerEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "customer_seq")
+    // already have 4 customers in the database, start from id 5
+    @SequenceGenerator(name = "customer_seq", sequenceName = "customer_seq", allocationSize = 1, initialValue = 5)
     @Column(name = "id")
     private Long id;
 
