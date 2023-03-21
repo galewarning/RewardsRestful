@@ -48,6 +48,15 @@ API for transaction
     PUT     /api/transactions/{id}         update a transaction
     DELETE  /api/transactions/{id}         delete a transaction
 
+API for rewards
+
+    GET     /api/rewards/{customerId}                       get rewards for each month and total
+    GET     /api/transactions/firstmonth/{customerId}       get first month transaction
+    GET     /api/transactions/secondmonth/{customerId}      get second month transaction
+    GET     /api/transactions/thirdmonth/{customerId}       get third month transaction
+    GET     /api/rewards/firstmonth/{customerId}            get first month rewards
+    GET     /api/rewards/secondmonth/{customerId}           get second month rewards
+    GET     /api/rewards/thirdmonth/{customerId}            get third month rewards
 
 Exception handling
 
