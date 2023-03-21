@@ -6,7 +6,6 @@ import java.sql.Timestamp;
 
 public class Transaction {
     private Long id;
-    @NotBlank
     private Long customerId;
     private Timestamp date;
     @Min(0)

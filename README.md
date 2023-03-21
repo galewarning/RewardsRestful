@@ -39,3 +39,23 @@ API for customers
     POST    /api/customers              create a customer
     PUT     /api/customers/{id}         update a customer
     DELETE  /api/customers/{id}         delete a customer
+
+API for transaction
+
+    GET     /api/transactions              get all transactions
+    GET     /api/transactions/{id}         get transaction by id
+    POST    /api/transactions              create a transaction
+    PUT     /api/transactions/{id}         update a transaction
+    DELETE  /api/transactions/{id}         delete a transaction
+
+
+Exception handling
+
+    CustomerNotFoundException
+    TransactionNotFoundException
+
+Validation
+    
+    @Min, @Max for customer age
+    @NotBlank for customer name
+    @Min for transaction amount

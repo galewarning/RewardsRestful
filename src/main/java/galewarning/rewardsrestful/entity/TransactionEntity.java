@@ -8,7 +8,9 @@ import java.sql.Timestamp;
 public class TransactionEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "transaction_seq")
+    // already have 19 transactions in the database, start from id 20
+    @SequenceGenerator(name = "transaction_seq", sequenceName = "transaction_seq", allocationSize = 1, initialValue = 20)
     @Column(name = "id")
     private Long id;
 
