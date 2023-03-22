@@ -3,7 +3,6 @@ package galewarning.rewardsrestful.controller;
 import galewarning.rewardsrestful.model.Rewards;
 import galewarning.rewardsrestful.model.Transaction;
 import galewarning.rewardsrestful.service.RewardsService;
-import galewarning.rewardsrestful.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
