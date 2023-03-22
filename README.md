@@ -68,3 +68,7 @@ Validation
     @Min, @Max for customer age
     @NotBlank for customer name
     @Min for transaction amount
+
+Test
+
+    RewardsServiceImplTest

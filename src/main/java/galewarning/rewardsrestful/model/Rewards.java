@@ -10,6 +10,9 @@ public class Rewards {
     private Long thirdMonthRewardPoints;
     private Long totalRewardPoints;
 
+    public Rewards() {
+    }
+
     public Rewards(Long customerId, Long firstMonthRewardPoints, Long secondMonthRewardPoints, Long thirdMonthRewardPoints, Long totalRewardPoints) {
         this.customerId = customerId;
         this.firstMonthRewardPoints = firstMonthRewardPoints;
